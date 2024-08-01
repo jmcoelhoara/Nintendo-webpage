@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title> Nintendo</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="icon" type="image/x-icon" href="fireplant.ico">
+
+</head>
+<body> 
+ <header>
+     <nav>
+         <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="characters.html">Characters</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="consoles.html">Consoles</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+ <main>
+<h1>Nintendo</h1>
+ <p>The history, consoles and the world behind this huge company</p>
+
+</main>
+
+<div id="footer">
+    <div class="turtle"></div>
+</div>
+
+<script>
+    document.addEventListener('keydown', function(event) {
+        if (event.code === 'Space') { // Verifica se a tecla pressionada é a barra de espaço
+            const image = document.getElementById('movingImage');
+            image.classList.add('jump');
+            setTimeout(() => {
+                image.classList.remove('jump');
+            }, 300); // Duração do pulo, deve ser igual ao tempo definido no 'transition'
+        }
+    });
+</script>
+
+<div id="footer">  
+    <div class="moving-image" id="movingImage"></div>
+</div>
+
+ <footer>
+<p>&copy; 2024 Nintendo Co.Ltda All rights reserved.</p>
+</footer>
+ 
+
+</body>
+</html>

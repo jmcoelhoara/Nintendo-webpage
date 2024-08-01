@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title> Nintendo</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="icon" type="image/x-icon" href="fireplant.ico">
+    
+
+</head>
+<body> 
+ <header>
+     <nav>
+         <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="characters.html">Characters</a></li>
+          <li><a href="history.html">History</a></li>
+          <li><a href="consoles.html">Consoles</a></li>
+          <li><a href="games.html">Games</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+ <main>
+    <section class="contact-section">
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+        <div id="formFeedback"></div>
+    </section>
+
+    <script src="contact.js"></script>
+
+
+
+</main>
+
+ <footer>
+<p>&copy; 2024 Nintendo Co.Ltda All rights reserved.</p>
+</footer>
+ 
+
+</body>
+</html>

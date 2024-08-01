@@ -1,0 +1,103 @@
+body{min-height: 100vh;
+background:url(Image-files/mariobackground.jpg) no-repeat;
+background-size: cover;
+background-position: center;}
+
+.moving-image {
+    position: absolute;
+    bottom: 10px;
+    width: 50px;
+    height: 50px;
+    background-image: url('image-files/mariomoving.gif'); 
+    background-size: cover;
+    animation: moveImage 10s linear infinite;
+    transition: transform 0.3s ease-out; 
+}
+
+@keyframes moveImage {
+    0% { left: 100%; }
+    100% { left: -50px; }
+}
+
+.jump {
+    transform: translateY(-200px); 
+}
+
+* { margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+header {font-family: Arial, sans-serif;
+    font-size: large;
+    line-height: 1.6;}
+
+main{
+    font-size: xx-large;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif ;
+}
+
+p{
+    font-size: large;
+}
+
+.moving-image {
+    position: absolute;
+    bottom: 90px;
+    width: 60px;
+    height: 55px;
+    background-image: url('Image-files/mariomoving.gif'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    animation: moveImage 10s linear infinite;
+}
+
+@keyframes moveImage {
+    0% { left: -50px; }
+    100% { left: 100%; }
+}
+
+
+.turtle {
+    position: absolute;
+    bottom: 500px;
+    width: 70px;
+    height: 80px;
+    background-image: url('Image-files/turtle.png'); 
+    background-size: cover;
+    animation: moveImage 15s linear infinite;
+}
+
+@keyframes turtle {
+    0% { left: 100%; }
+    100% { left: -50px; }
+}
+
+
+header {background: #fe0016;
+    color: #fff;
+    padding: 1rem 0;}
+
+nav ul {list-style: none;
+    display: flex;
+    justify-content: center;}
+
+nav ul li {margin: 0 1rem;}
+
+nav ul li a {color: #fff;
+    text-decoration: none;
+    font-weight: bold;}
+
+nav ul li a:hover {color: #f60;}
+
+main { padding: 2rem;
+    text-align: center;}
+
+footer {background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;}
+
+
+
